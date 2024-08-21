@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        if (!validateForm()) {
+            event.preventDefault(); // Prevent form submission if validation fails
+        }
+    });
+});
+
 function validateForm() {
     if (document.getElementById('firstName').value === "") {
         alert("First Name is required..");
