@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="background">
+        <div class="sub-bg">
+            <h1 class="heading">Registration Form</h1>
+            <p class="para">Please provide all required details to register this program.</p>
+            <br/>
+            <hr/>
+            <br/>
+            <br/>
+            <form id="myForm">
+                <div class="name-section">
+                    <div class="first">
+                        <label for="firstName">First Name:</label><br/>
+                        <input type="text" id="firstName" name="firstName"><br><br>
+                    </div>
+                    <div class="last">
+                        <label for="lastName">Last Name:</label><br/>
+                        <input type="text" id="lastName" name="lastName"><br><br>
+                    </div>
+                </div>
+                <div class="name-section">
+                    <div class="first">
+                        <label for="email">Email id:</label><br/>
+                        <input type="email" id="email" name="email"><br><br>
+                    </div>
+                    <div class="last">
+                        <label for="contact">Contact Number:</label><br/>
+                        <input type="tell" id="contact" name="contact"><br><br>
+                    </div>
+                </div>
+                <div class="name-section">
+                    <div class="first">
+                        <label for="address">Address:</label><br/>
+                        <input type="text" id="address" name="address"><br><br>
+                    </div>
+                    <div class="last">
+                        <label for="city">City:</label><br/>
+                        <input type="text" id="city" name="city"><br><br>
+                    </div>
+                </div>
+                <button id="button" onclick="validateForm()" class="button" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
